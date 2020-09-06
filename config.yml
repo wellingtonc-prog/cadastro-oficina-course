@@ -1,0 +1,18 @@
+title: Cadastro - Oficina
+description: >-
+  Uma data center configurado e posto em local adaquado que podemos adicionar
+  cliente e editar, como também consultas de produtos.
+template:
+  repo: cadastro-oficina-template
+  name: cadastro-oficina
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
